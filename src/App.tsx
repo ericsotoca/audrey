@@ -23,7 +23,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-warm-200 py-4">
+    <div className="border-b border-rose-200 py-4">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full items-center justify-between text-left focus:outline-none"
@@ -54,7 +54,7 @@ export default function App() {
   return (
     <div className="min-h-screen selection:bg-sage-200 selection:text-sage-700">
       {/* Hero Section */}
-      <header className="relative overflow-hidden bg-warm-100 pt-16 pb-24 lg:pt-32 lg:pb-40">
+      <header className="relative overflow-hidden bg-rose-100 pt-16 pb-24 lg:pt-32 lg:pb-40">
         <div className="absolute inset-0 z-0 opacity-10">
           <div className="absolute top-0 left-0 w-64 h-64 bg-sage-200 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-sage-200 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
@@ -113,7 +113,7 @@ export default function App() {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                   viewport={{ once: true }}
-                  className="flex gap-4 p-6 rounded-2xl bg-warm-50 border border-warm-100"
+                  className="flex gap-4 p-6 rounded-2xl bg-rose-50 border border-rose-100"
                 >
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
                     <Heart className="w-5 h-5 text-sage-600" />
@@ -148,7 +148,7 @@ export default function App() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 bg-warm-50">
+      <section className="py-24 bg-rose-50">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16 max-w-6xl mx-auto">
             <div className="lg:w-1/2">
@@ -160,7 +160,7 @@ export default function App() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-sage-200 rounded-full z-0 blur-2xl opacity-50" />
-                <div className="absolute -top-6 -left-6 w-48 h-48 bg-warm-200 rounded-full z-0 blur-2xl opacity-50" />
+                <div className="absolute -top-6 -left-6 w-48 h-48 bg-rose-200 rounded-full z-0 blur-2xl opacity-50" />
               </div>
             </div>
             <div className="lg:w-1/2">
@@ -207,7 +207,7 @@ export default function App() {
               <motion.div 
                 key={i}
                 whileHover={{ y: -5 }}
-                className="p-8 rounded-3xl bg-warm-50 border border-warm-100 text-center"
+                className="p-8 rounded-3xl bg-rose-50 border border-rose-100 text-center"
               >
                 <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
                   <benefit.icon className="w-7 h-7 text-sage-600" />
@@ -221,7 +221,7 @@ export default function App() {
       </section>
 
       {/* Package Details */}
-      <section className="py-24 bg-warm-100">
+      <section className="py-24 bg-rose-100">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
@@ -254,7 +254,7 @@ export default function App() {
                   desc: "Vous n'êtes jamais seul(e). Je suis disponible pour répondre à vos doutes et vous soutenir entre deux séances." 
                 }
               ].map((item, i) => (
-                <div key={i} className="flex flex-col md:flex-row items-start md:items-center gap-6 p-8 bg-white rounded-3xl shadow-sm border border-warm-200">
+                <div key={i} className="flex flex-col md:flex-row items-start md:items-center gap-6 p-8 bg-white rounded-3xl shadow-sm border border-rose-200">
                   <div className="w-14 h-14 bg-sage-50 rounded-2xl flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-7 h-7 text-sage-600" />
                   </div>
@@ -283,7 +283,7 @@ export default function App() {
               <p className="text-lg text-slate-700 mb-8 leading-relaxed">
                 Je crois profondément que chaque être humain possède en lui les ressources pour s'en libérer et renaître. Je suis là pour vous tenir la main et vous guider vers vos propres ressources intérieures.
               </p>
-              <div className="p-6 bg-warm-50 rounded-2xl border-l-4 border-sage-600 italic font-serif text-slate-700">
+              <div className="p-6 bg-rose-50 rounded-2xl border-l-4 border-sage-600 italic font-serif text-slate-700">
                 "Ma mission est de vous aider à transformer vos épreuves en forces et à retrouver l'éclat de votre joie de vivre."
               </div>
             </div>
@@ -292,7 +292,7 @@ export default function App() {
                 <img 
                   src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" 
                   alt="Audrey - Hypnothérapeute" 
-                  className="rounded-full w-80 h-80 md:w-96 md:h-96 object-cover mx-auto shadow-2xl border-8 border-warm-100"
+                  className="rounded-full w-80 h-80 md:w-96 md:h-96 object-cover mx-auto shadow-2xl border-8 border-rose-100"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] border border-sage-200 rounded-full -z-10 animate-pulse" />
@@ -303,7 +303,7 @@ export default function App() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-warm-50">
+      <section className="py-24 bg-rose-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-16 text-center">
             Ils ont fait un "RESET" dans leur vie :
@@ -319,7 +319,7 @@ export default function App() {
                 author: "Thomas"
               }
             ].map((testimonial, i) => (
-              <div key={i} className="bg-white p-10 rounded-3xl shadow-sm border border-warm-200 relative">
+              <div key={i} className="bg-white p-10 rounded-3xl shadow-sm border border-rose-200 relative">
                 <Quote className="absolute top-6 right-6 w-10 h-10 text-sage-100" />
                 <p className="text-lg text-slate-700 mb-6 italic leading-relaxed relative z-10">
                   "{testimonial.text}"
@@ -337,7 +337,7 @@ export default function App() {
       {/* Pricing / CTA */}
       <section id="pricing" className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto bg-warm-100 rounded-[3rem] p-8 md:p-16 text-center border border-warm-200 relative overflow-hidden">
+          <div className="max-w-4xl mx-auto bg-rose-100 rounded-[3rem] p-8 md:p-16 text-center border border-rose-200 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-sage-200 rounded-full blur-3xl opacity-20 translate-x-1/2 -translate-y-1/2" />
             
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 relative z-10">
@@ -348,7 +348,7 @@ export default function App() {
             </p>
             
             <div className="mb-12 relative z-10">
-              <div className="inline-block bg-white px-8 py-10 rounded-3xl shadow-xl border border-warm-200">
+              <div className="inline-block bg-white px-8 py-10 rounded-3xl shadow-xl border border-rose-200">
                 <span className="text-slate-400 line-through text-xl block mb-2">1350 €</span>
                 <span className="text-5xl md:text-6xl font-bold text-sage-600 block mb-4">1247 €</span>
                 <p className="text-slate-500 font-medium mb-6">Accompagnement complet</p>
@@ -377,7 +377,7 @@ export default function App() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-warm-50">
+      <section className="py-24 bg-rose-50">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
